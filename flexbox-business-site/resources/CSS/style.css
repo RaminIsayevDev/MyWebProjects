@@ -1,0 +1,328 @@
+body {
+    background-color: #fff;
+}
+
+#main-Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Выравнивание по центру */
+    justify-content: center;
+    width: 100%;
+}
+/* Header styling */
+header {
+    display: flex;
+    flex: 1;
+    max-width: 100%;
+    justify-content: space-between;
+    border-bottom: solid 1px #c6c1c1;
+    z-index: 10;
+}
+
+#companyInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+}
+
+#companyInfo h1 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Navigation in the Header */
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: black;
+    padding: 0.5rem;
+}
+
+.navLinks li {
+    list-style-type: none;
+}
+
+/* Styling Logo image and H1 */
+#companyInfo img {
+    width: 21%;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+}
+
+/* Styling Home section */
+#home {
+    background-image: url(../images/forHomeSection.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0;
+    padding: 8% 0;
+}
+
+.homeHeader {
+    width: 50%;
+    box-shadow: 5px 0.25rem 2.5rem #0d2c0a;
+}
+
+.homeHeader h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.homeHeader p {
+    line-height: 1.5rem;
+}
+
+/* Styling Service section */
+#services {
+    flex: 1;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.servicesHeader {
+    margin: 2rem 2rem 1rem;
+    width: 70%;
+}
+
+.servicesHeader p {
+    line-height: 1.5rem;
+}
+
+.serviceCards {
+    display: flex;
+    gap: 20px; /* Расстояние между карточками */
+    justify-content: center;
+    align-items: stretch;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+figure {
+    flex: 1;
+    max-width: 400px;
+    border: 2px solid #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+figure figcaption {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+    min-width: 200px;
+}
+
+/* Styling About section */
+#about {
+    background-image: url(../images/forAboutSection.jpg);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 8% 0;
+    width: 100%;
+}
+
+.aboutSection {
+    width: 70%;
+    margin: 0 auto;
+    padding: 2em;
+    background-color: rgba(0 0 0 / 0.40);
+}
+
+/* Styling Contact section */
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+form {
+    margin: 0.4em auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 0.3em;
+}
+
+.contactHeader {
+    width: 60%;
+    line-height: 1.5rem;
+}
+
+/* Styling Footer */
+footer {
+    padding: 1.2rem;
+    margin: 0;
+    max-width: 100%;
+    background-color: #000;
+    color: #797A7F;
+}
+
+footer p{
+    margin: 0;
+    padding: 0;
+    font-size: 0.6rem;
+}
+
+#PhotosLink {
+    color: #797A7F;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 820px) and (min-width: 671px) {
+    #CompanyInfo #CompanyName {
+        font-size: 1.2rem;
+    }
+    #CompanyInfo img {
+        width: 26%;
+    }
+
+}
+
+@media only screen and (max-width: 670px) {
+    #companyInfo img {
+        width: 30%;
+    }
+
+    .homeHeader {
+        width: 70%;
+    }
+
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    #CompanyInfo #CompanyName {
+        font-size: 1rem;
+    }
+
+    li {
+        font-size: 0.8rem;
+    }
+
+    p, figcaption {
+        font-size: 0.85rem;
+    }
+}
+
+@media only screen and (max-width: 510px) {
+    #companyInfo img {
+        width: 40%;
+    }
+
+    .homeHeader {
+        width: 80%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    #CompanyInfo #CompanyName {
+        font-size: 0.9rem;
+        display: none;
+    }
+
+    li {
+        font-size: 0.7rem;
+    }
+
+    p, figcaption {
+        font-size: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #companyInfo img {
+        width: 50%;
+    }
+
+    .homeHeader {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 0.9rem;
+    }
+
+    li {
+        font-size: 0.6rem;
+    }
+
+    p, figcaption {
+        font-size: 0.65rem;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    #companyInfo img {
+        width: 60%;
+    }
+
+    .homeHeader {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    li {
+        font-size: 0.5rem;
+    }
+
+    p, figcaption {
+        font-size: 0.55rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    #companyInfo img {
+        width: 70%;
+    }
+}
